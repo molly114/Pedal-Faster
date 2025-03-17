@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    color: #fff;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin-bottom: 200px;
+}
+
+header {
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: repeat-x;
+    width: 960px;
+    position: fixed;
+    z-index: 999;
+    /* outline: 2px solid greenyellow; */
+}
+
+header img:first-child {
+    margin-right: 30px;
+}
+
+.tabmenu {
+    float: right;
+}
+
+.tabmenu a:hover {
+    color: yellow;
+}
+
+section {
+    outline: 2px solid red;
+    margin-bottom: 60px;
+    /* padding-top: 100px; */
+}
+
+section .wrap {
+    margin-bottom: 15px;
+}
+
+section .wrap img {
+    float: left;
+    
+}
+
+section .wrap .article {
+    /* outline: 2px solid skyblue; */
+}
+
+section .wrap .article h1 {
+font-size: 26px;
+}
+
+section .wrap .article .date {
+    color: yellow;
+    font-weight: 600;
+    padding: 50px 0 20px;
+}
+
+section .detail h2 {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+section .detail .content {
+    float: left;
+    width: 23.5%;
+}
+
+section .detail .content~.content {
+    margin-left: 2%;
+}
+
+section .detail .content a {
+    display: block;
+    padding: 10px 0 10px;
+    font-size: 14px;
+   /* outline: 2px solid tomato; */
+}
+
+footer {
+    background-image: url(../images/bg-header.jpg);
+    width: 100%;
+    height: 60px;
+    text-align: right;
+}
+
+footer span {
+    padding: 0 10px;
+}
+
+span::after {
+    content: "|";
+    display: inline-block;
+    clear: left;
+}
